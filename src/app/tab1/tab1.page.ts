@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonHeader,IonGrid,IonButtons,IonCol,IonRow, IonToolbar, IonTitle,IonLabel, IonContent,IonCard,IonAlert,IonButton } from '@ionic/angular/standalone';
-import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import Dictionary from 'src/interfaces/global.interface';
 
 @Component({

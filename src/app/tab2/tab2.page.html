@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      {{dc.countdown}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,36 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">  
+          {{dc.countdown}}
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-grid class="circle">
+      <ion-row>
+        <ion-col >
+          <ion-label>Hora</ion-label>  - {{time}} 
+        </ion-col>
+        
+        <ion-col >
+          <ion-label>Cronometro</ion-label> - {{cron}} 
+        </ion-col>
+      </ion-row>
+        <ion-row>
+        <ion-col>
+      <ion-button (click)="countTime('1')">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-button>
+
+    
+      <ion-button (click)="countTime('2')">
+        {{ dc.stopcountdown }}<ion-icon name="arrow-forward-outline"></ion-icon> 
+      </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-card>
+
 </ion-content>
